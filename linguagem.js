@@ -1,8 +1,13 @@
- function linguagemDosGatosECachorros(animal)                                                                                                                                                                                                                                                              
-{ if (animal == 'cachorro')   
-return 'au au'   
-else if (animal == 'gato')   
-return 'miau'
-else
-return 'Informe gato ou cachorro' }
+function linguagemDosGatosECachorros(animal) {
+  if (animal === 'cachorro') {
+    return 'au au';
+  }
 
+  if (animal === 'gato') {
+    return 'miau';
+  }
+
+  return 'Informe gato ou cachorro';
+}
+
+module.exports = { linguagemDosGatosECachorros };
