@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.chatsuite</groupId>
-    <artifactId>announcement-api-tests</artifactId>
+    <artifactId>announcement-automation-tests</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,6 +14,8 @@
         <junit.version>5.10.2</junit.version>
         <restassured.version>5.4.0</restassured.version>
         <wiremock.version>3.6.0</wiremock.version>
+        <selenium.version>4.29.0</selenium.version>
+        <webdrivermanager.version>5.9.2</webdrivermanager.version>
     </properties>
 
     <dependencies>
@@ -39,6 +41,18 @@
             <groupId>org.wiremock</groupId>
             <artifactId>wiremock-standalone</artifactId>
             <version>${wiremock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
